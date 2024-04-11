@@ -1,0 +1,25 @@
+@import './variables';
+
+.menu {
+  display: flex;
+  width: 100%;
+  background-color: $header-bg;
+  justify-content: center;
+}
+
+.link {
+  padding: 15px 20px;
+  color: $base;
+  font-size: $font-md;
+  border: 10px outset #58b0d6;
+  margin: 10px;
+}
+
+.link:hover {
+  color: $warning;
+}
+
+.active {
+  color: $primary;
+  font-weight: bold;
+}
