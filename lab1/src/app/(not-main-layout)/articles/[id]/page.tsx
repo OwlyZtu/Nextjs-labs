@@ -37,7 +37,7 @@ export default async function ArticlesPage({ params: { id } }: ArticlePageProps)
       
       <div className='flex flex-col justify-start p-4'>
         {comments.map((comment) => 
-          <div className='m-2 p-2 rounded-lg'>
+          <div key={comment.id} className='m-2 p-2 rounded-lg'>
             <p className='text-primary font-semibold'>{comment.name}</p>
             <p className='text-gray-600 font-semibold text-sm'>by {comment.email}</p>
             <p className='mt-2 italic'>{comment.body}</p>
