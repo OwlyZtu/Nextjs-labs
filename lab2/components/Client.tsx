@@ -11,7 +11,7 @@ export default function Client() {
       method: 'POST',
       body: JSON.stringify({
         name: 'John Doe',
-        email: 'qwe@email.com',
+        email: 'user-test-2@email.com',
         password: 'pass1234',
       }),
     });
